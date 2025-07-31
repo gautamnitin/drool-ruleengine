@@ -20,7 +20,7 @@ public class DataInitializer implements CommandLineRunner {
 
         ruleRepo.save(new Rule(null, "HighElectro",
                 "amount > 500 && merchantType == \"ELECTRONICS\"",
-                10, true, "ngautam", electronics));
+                10, true, "cust01", electronics));
 
         System.out.println("<=========================Rules initialized===========================================>");
         System.out.println("Rules:" + ruleRepo.findAll());
